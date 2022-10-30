@@ -1,0 +1,10 @@
+{
+    "/posts": {
+      "target": "https://trainee-program-api-staging.applaudostudios.com/api/v1",
+      "secure": true,
+      "pathRewrite": {
+      "^/posts": ""
+    },
+      "changeOrigin": true
+    }
+  }
