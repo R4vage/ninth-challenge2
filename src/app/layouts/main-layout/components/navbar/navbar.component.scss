@@ -1,0 +1,110 @@
+@import '_variables';
+
+:host{
+    
+    
+    z-index: 8;
+}
+
+mat-toolbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background-color: $clr-main-dark;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 5px grey;
+    z-index: 999;
+    h3{
+        font-size: 1.2rem;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .user{  
+        display: flex;
+        gap: 1em;
+        position: relative;
+        z-index: 8;
+        .user-button{
+            background-color: $clr-main-lighter;
+            border-radius: 100px;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        mat-card{
+            position: absolute;
+            width: max-content;
+            background-color: $clr-alternative;
+            border-radius: 5px;
+            padding: 1em;
+            top: 50%;
+            right: 45%;
+            z-index: 34;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .cross {
+                position: inherit;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                margin-block: 0.2em;
+                margin-inline: 0.5em;
+                font-weight: 600;
+            }
+            h2{
+                font-weight: 600;
+                padding-inline: 0.8em;
+                z-index: 8;
+            }
+
+            button{
+                background-color: $clr-grey;
+                color: white;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+
+
+}
+
+.shopping-cart{
+    position: relative;
+    button{
+        background-color: rgb(252, 183, 72);
+        color: black;
+    }
+}
+
+.items-number{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    width: 2em;
+    height: 2.2em;
+    margin: 0;
+    padding-bottom: 0.4em;
+    text-align: center;
+    vertical-align: center;
+    padding-block: 0 !important;
+    font-size: small;
+    color: black;
+    font-weight: 600;
+    z-index: 3;
+    cursor:default;
+}
